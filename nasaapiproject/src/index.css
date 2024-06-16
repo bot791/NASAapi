@@ -1,0 +1,17 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  background-image: url("https://th-thumbnailer.cdn-si-edu.com/1JF9Ry4OrJBHZK4Q-bUO8DEuglY=/fit-in/1072x0/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/b4/f2/b4f20d77-8c26-492d-ba9b-bb456d56c21b/hs-2015-29-a-xlarge_web.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+ 
+  margin: 0;
+  padding: 0;
+}
+
