@@ -48,13 +48,13 @@ function App() {
         />
       ) : (
         <div>
-          <div className=" w-full bg-transparent flex justify-around">
+          <div className=" w-full bg-transparent flex mt-10 justify-around">
             <img
               src="./logo.png"
               alt="logo"
               className=" h-24 sm:h-40 animate-bounce hover:animate-ping"
             />
-            <p className=" font-bold text-sm sm:text-2xl font-Alata text-white uppercase">
+            <p className=" font-bold text-sm sm:text-5xl font-Alata text-white uppercase">
               NASA images & facts
             </p>
             <p className=" font-normal font-Jura text-xs text-white">
@@ -67,7 +67,11 @@ function App() {
           </div>
           <div className=" mx-auto flex flex-col sm:flex-row gap-2 px-5 py-5 bg-white bg-opacity-75">
             {data.hdurl ? (
-              <img className=" mx-auto w-5/6" src={data.hdurl} alt="Image" />
+              <img
+                className=" mx-auto sm:w-1/2 w-5/6"
+                src={data.hdurl}
+                alt="Image"
+              />
             ) : (
               <div className="hidden"></div>
             )}
@@ -76,16 +80,17 @@ function App() {
               <p className="hidden"></p>
             ) : (
               <iframe
-                className=" w-5/6 mx-auto"
+                className=" w-5/6 sm:w-1/2 mx-auto"
                 src={data.url}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             )}
-            <p className=" text-center sm:my-auto text-neutral-800 font-semibold">
-              <span className=" text-neutral-800 font-bold text-2xl py-5 font-Jura">
+            <p className=" text-center sm:my-auto ">
+              <span className=" text-neutral-800 font-extrabold text-xl sm:text-4xl py-5 font-Philosopher">
                 This is {data.title}
               </span>
+              <br />
               <br />
               <span className=" text-sm sm:text-xl font-Kosugi">
                 {data.explanation}
@@ -113,8 +118,8 @@ function App() {
               </button>
             </form>
           </div>
-          <p className=" font-bold text-xs text-neutral-800 font-Jura uppercase text-center">
-            Made by: Kajal Biswas
+          <p className=" font-bold text-xs text-neutral-800 font-Jura uppercase text-center ">
+            <span className=" bg-yellow-400">Made by: Kajal Biswas</span>
           </p>
         </div>
       )}
