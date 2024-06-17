@@ -99,7 +99,7 @@ function App() {
           </div>
           <div className=" flex flex-row justify-center px-5 py-5 bg-teal-800 bg-opacity-75">
             <form onSubmit={handleSubmit} className="">
-              <label className=" text-center font-extrabold text bg-yellow-500 text-2xl font-Jura text-neutral-800 uppercase my-5">
+              <label className=" text-center font-extrabold text bg-yellow-500 bg opacity-70 text-2xl font-Jura text-neutral-800 uppercase my-5">
                 FIND IMAGE BY DATE <br />
                 <input
                   type="date"
