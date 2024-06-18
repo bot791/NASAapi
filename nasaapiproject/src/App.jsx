@@ -50,11 +50,12 @@ function App() {
         <div>
           <div className=" w-full bg-transparent flex mt-10 justify-around">
             <img
-              src="./logo.png"
+              src="./spaceship.png"
               alt="logo"
-              className=" h-24 sm:h-40 animate-bounce hover:animate-ping"
+              id="spaceship"
+              className=" h-24 sm:h-40"
             />
-            <p className=" font-bold text-sm sm:text-5xl font-Alata text-white uppercase">
+            <p className=" font-bold text-md sm:text-5xl font-Alata text-white uppercase">
               NASA images & facts
             </p>
             <p className=" font-normal font-Jura text-xs text-white">
